@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,600;0,700;1,800&family=Paytone+One&family=Poppins:ital,wght@0,300;0,400;0,800;1,100;1,200;1,300;1,400;1,600;1,800&family=Rokkitt:wght@700&display=swap');
+/* link font dari google */
+
+body {
+    font-family: "Poppins", sans-serif;
+    /* menggunakan jenis font poppins */
+    display: flex;
+    /* menggunakan flexbox untuk tata letak */
+    justify-content: center;
+    /* pusatkan konten secara horizontal */
+    align-items: center;
+    /* pusatkan konten secara vertikal */
+    min-height: 100vh;
+    /* set tinggi minimum viewport agar konten selalu di tengah */
+    background-color: #f4f4f4;
+    /* warna latar belakang halaman */
+    margin: 0;
+    /* hapus margin default pada body */
+}
+
+.container {
+    background-color: #fff;
+    /* warna latar belakang kontainer utama */
+    padding: 30px;
+    /* ruang di dalam kontainer */
+    border-radius: 8px;
+    /* sudut kontainer yang melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* efek bayangan tipis pada kontainer */
+    text-align: center;
+    /* pusatkan teks di dalam kontainer */
+}
+
+h1 {
+    margin-bottom: 20px;
+    /* ruang di bawah judul */
+    color: #333;
+    /* warna teks judul */
+}
+
+textarea {
+    width: 100%;
+    /* lebar textarea 100% dari kontainer */
+    padding: 10px;
+    /* ruang di dalam textarea */
+    margin-bottom: 15px;
+    /* ruang di bawah textarea */
+    border: 1px solid #ccc;
+    /* garis tepi textarea */
+    border-radius: 4px;
+    /* sudut textarea yang melengkung */
+    box-sizing: border-box;
+    /* memastikan padding dan border termasuk dalam lebar dan tinggi elemen */
+    min-height: 100px;
+    /* tinggi minimum textarea */
+}
+
+button {
+    background-color: #007bff;
+    /* warna latar belakang tombol */
+    color: white;
+    /* warna teks tombol */
+    padding: 10px 20px;
+    /* ruang di dalam tombol */
+    border: none;
+    /* hapus garis tepi tombol */
+    border-radius: 4px;
+    /* sudut tombol yang melengkung */
+    cursor: pointer;
+    /* mengubah kursor menjadi pointer saat dihover */
+    font-size: 16px;
+    /* ukuran font tombol */
+    transition: background-color 0.3s ease;
+    /* animasi transisi warna latar belakang */
+    margin-right: 5px;
+    /* memberikan sedikit ruang di sebelah kanan tombol */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* warna latar belakang tombol saat dihover */
+}
+
+#pesan {
+    margin-top: 15px;
+    /* ruang di atas pesan */
+    font-weight: bold;
+    /* teks pesan tebal */
+    color: green;
+    /* warna teks pesan sukses */
+}
+
+/* media query untuk layar dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        /* membuat kontainer lebih lebar pada layar tablet */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        /* untuk ukuran font judul lebih kecil pada layar tablet */
+    }
+
+    button {
+        font-size: 14px;
+        /* ukuran font pada tombol untuk layar tablet */
+        padding: 8px 15px;
+        margin-right: 3px;
+    }
+}
+
+/* media query untuk layar dengan lebar maksimum 480px */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        /* agar ukuran container memenuhi lebar layar */
+        padding: 15px;
+        border-radius: 0;
+        /* menghilangkan sudut melengkung pada layar */
+        box-shadow: none;
+        /* menghilangkkan bayangan pada layar */
+    }
+
+    h1 {
+        font-size: 1.2 rem;
+        /* ukuran font */
+        margin-bottom: 15px;
+    }
+
+    textarea {
+        font-size: 14px;
+        /* ukuran font */
+    }
+
+    button {
+        font-size: 12px;
+        /* ukuran font tombol lebih kecil */
+        padding: 6px 12px;
+        margin-right: 2px;
+    }
+}
